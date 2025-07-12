@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hr {
+    height: 10vh;
+    width: 99.5vw;
+    background-color: rgba(196, 196, 196, 0.63);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    margin-top: 0.5vh;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px black;
+}
+
+.hr h1 {
+    color: rgba(0, 0, 0, 0.781);
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: color-change 6s infinite ease-in-out;
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(129, 127, 255);
+    }
+
+    50% {
+        color: lightsalmon;
+    }
+
+    100% {
+        color: greenyellow;
+    }
+}
+
+.container {
+    height: 20vh;
+    width: 50vw;
+    background-color: rgb(238, 231, 231);
+    backdrop-filter: blur(50px);
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px black;
+
+}
+
+#input {
+    height: 10vh;
+    width: 48.8vw;
+    margin-top: 2vh;
+    padding-left: 20px;
+    border-radius: 50px;
+    color: black;
+    font-size: 20px;
+    background: rgba(128, 98, 42, 0.205);
+    outline: none;
+    border:none;
+}
+
+#btn {
+    height: 5vh;
+    width: 10vw;
+    margin-top: 1vh;
+    font-size: 20px;
+    color: black;
+    border-radius: 50px;
+    margin-left: 19vw;
+    background: wheat;
+    box-shadow: 0px 2px black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#btn:hover {
+    box-shadow: 0px -2px black;
+    background: black;
+    color: wheat;
+    transform: translateY(5px);
+}
+
+#btn.hovered {
+    box-shadow: 0px -2px black;
+    background: black;
+    color: wheat;
+    transform: translateY(5px);
+}
